@@ -15,7 +15,7 @@ Heatmap KMO index |  Corelograma variabile si factori
 :-------------------------:|:-------------------------:
 ![image](https://user-images.githubusercontent.com/76962878/190694547-44afdad8-0a1f-42f6-893b-119e24dd443e.png)  | ![image](https://user-images.githubusercontent.com/76962878/190698093-11637218-6c89-4a89-a576-9ee1a3527f3b.png)
 
-Pentru o analiza mai detaliata click [aici](TMSResolute10/Data-Analysis-Project/blob/branch/other_file.md).
+Pentru o analiza mai detaliata click [aici](TMSResolute10/Data-Analysis-Project/blob/main/Proiect/Analiza.md).
 
 
 
