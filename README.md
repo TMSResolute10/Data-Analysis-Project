@@ -2,7 +2,7 @@
 
 Proiectul urmareste sa analizeze un set de date folosind analiza factoriala exploratorie a datelor. Aceasta metoda este proiectata cu scopul de a identifica relațiile de baza dintre variabilele măsurate. 
 
-Pentru vizualizarea si calculul legaturilor am folosit biblioteca pandas si numpy ale limbajului de programare Python.
+Pentru vizualizarea si calculul legaturilor am folosit biblioteca pandas si numpy ale limbajului de programare Python. Pentru realizarea interfetei cu user-ul am folosit libraria PySide2, mai precis QtWidgets.  
 
 
 ## Descriere
