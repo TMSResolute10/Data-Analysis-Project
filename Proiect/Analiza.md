@@ -38,7 +38,7 @@ I selected exploratory factor analysis for this study since the model is conside
 
 * ### KMO index correlation matrix
 
-![image](https://user-images.githubusercontent.com/76962878/190699859-5727731f-f55a-4a40-b8d7-8ec40a679552.png)
+![image](https://user-images.githubusercontent.com/76962878/194668085-c6b8a25e-8718-4928-831f-d29ee224812f.png)
 
 >Figure 2: KMO index heatmap
 
@@ -47,7 +47,8 @@ The factorability of the main values can be determined using the correlogram of 
 One of the strongest correlations is seen in the sleep quality rating for the hotels investigated. According to this, a guest's pleasure appears to be strongly related to the level of comfort and relaxation they experience in the country they visit. On the other hand, the GDP value as well as the PDI index ("power distance") play an equally vital role in the final rating given to the hotel, and thus in customer satisfaction. A high GDP can indicate that the country visited is one of the top choices for travellers, as tourism plays a very important role in a country's economy. The PDI index measures tourists' inclination to consider a country's administration and political issues before deciding whether or not to visit that country. Thus, the high value demonstrates how a country's instability and the way it prioritizes equality among people can damage its tourism industry.
 
 * ### Factor variance
-![image](https://user-images.githubusercontent.com/76962878/190699970-17029732-1545-4c29-a8d1-a9939592d847.png)
+![image](https://user-images.githubusercontent.com/76962878/194668543-c1402b05-0ef7-4f89-88c4-98b3849f380c.png)
+
 
 >Figure 3: Factor variance table
 
