@@ -1,25 +1,23 @@
-# Proiect Analiza Datelor
+# Data Analysis Project
 
-Proiectul urmareste sa analizeze un set de date folosind analiza factoriala exploratorie a datelor. Aceasta metoda este proiectata cu scopul de a identifica relațiile de baza dintre variabilele măsurate. 
+The project aims to analyse a dataset using exploratory factor analysis. This method is designed with the aim of identifying underlying relationships between measured variables.
 
-Pentru vizualizarea si calculul legaturilor am folosit biblioteca pandas si numpy ale limbajului de programare Python. Pentru realizarea interfetei cu user-ul am folosit libraria PySide2, mai precis QtWidgets.  
+To visualize and calculate the relationships between the variables, I used Python's pandas and numpy libraries. For the user interface modelling, I used the PySide2 library, in particular QtWidgets.
 
+## Description
+The variables used in this study contain data about a randomly chosen hotel located in the capital of one of the 80 countries participating in the study and the first review of it collected from TripAdvisor.com. I would like to mention that the rating collected does not define the quality of the country in question, and, as in any other country, there are a multitude of factors that can affect this rating, such as: a dissatisfied customer; the choice of a hotel that did not meet certain criteria and that no longer exists at the moment; the period in which the review was left, etc. The analysis of the factors will be done according to variables related to the hotel and those related to the destination. For the destination analysis, I used variables such as GDP and Hofstede's cultural dimension variables.
 
-## Descriere
-Variabilele folosite in studiu conțin date despre un hotel ales aleatoriu aflat in capitala uneia dintre cele 80 de tari care participa la studiu si un prim review al acestuia colectat de pe TripAdvisor.com. Țin sa menționez ca rating-ul colectat nu definește calitatea tarii respective, si, ca in orice alta tara, exista o multitudine de factori care pot afecta acest rating precum: un client nemulțumit, alegerea unui hotel care nu îndeplinea anumite criterii si care nu mai exista la momentul actual, perioada in care a fost lăsat review-ul etc. 
-Analiza factorilor se va face in funcție de variabile ce țin de hotel si cele ce țin de destinație. Pentru analiza destinației am utilizat variabile precum GDP (PIB) si variabilele dimensiunii culturale ale lui Hofstede.
+## Results 
 
-## Rezultate
-
-Heatmap KMO index |  Corelograma variabile si factori
+Heatmap KMO index |  Factor and variables corelogram
 :-------------------------:|:-------------------------:
 ![image](https://user-images.githubusercontent.com/76962878/190694547-44afdad8-0a1f-42f6-893b-119e24dd443e.png)  | ![image](https://user-images.githubusercontent.com/76962878/190698093-11637218-6c89-4a89-a576-9ee1a3527f3b.png)
 
-Pentru o analiza mai detaliata click [aici](Proiect/Analiza.md).
+For a more detailed analysis click [here](Proiect/Analiza.md).
 
 
 
 
-> Sursa: Radojevic, T., Stanisic, N., & Stanic, N. (2016). Inside the Rating Scores: A Multilevel Analysis of the Factors Influencing Customer Satisfaction in the Hotel Industry. Cornell Hospitality Quarterly. 
+> Source: Radojevic, T., Stanisic, N., & Stanic, N. (2016). Inside the Rating Scores: A Multilevel Analysis of the Factors Influencing Customer Satisfaction in the Hotel Industry. Cornell Hospitality Quarterly. 
 Data set: Radojevic, T., Stanisic, N., & Stanic, N. (2016), Inside the Rating Scores: A Multilevel Analysis of the Factors Influencing Customer Satisfaction in the Hotel Industry., Mendeley Data, v1 
 [dataset](http://dx.doi.org/10.17632/kwsrxshf9x.1) [research](https://www.researchgate.net/publication/312164283_Inside_the_Rating_Scores_A_Multilevel_Analysis_of_the_Factors_Influencing_Customer_Satisfaction_in_the_Hotel_Industry)
