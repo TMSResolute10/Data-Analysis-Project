@@ -1,135 +1,137 @@
-## Descriere studiu
+## Study description
 
-Studiul urmărit prezintă o perioada extinsă din care au fost extrase datele dar pentru simplificare majoritatea factorilor sunt din anul 2010. Variabilele folosite conțîn date despre un hotel ales aleatoriu aflat în capitală uneia dintre cele 80 de țări care participa la studiu și un prim review al acestuia colectat de pe TripAdvisor.com. Țîn să menționez că rating-ul colectat nu definește calitatea țării respective, și, că in orice altă țară, există o multitudine de factori care pot afecta acest rating precum: un client nemulțumit, alegerea unui hotel care nu îndeplinea anumite criterii și care nu mai există la momentul actual, perioada in care a fost lăsat review-ul etc. 
+The dataset of the following study was extracted over a long period of time, but for the sake of simplicity, the majority of the factors are from 2010. The variables give information about a randomly selected hotel located in the capital of one of the 80 countries taking part in the study, as well as the first review of the hotel obtained from TripAdvisor.com. I would like to emphasize that the rating collected does not define the quality of the country in question, and that, as in any other country, a variety of factors can influence this rating, such as: a dissatisfied customer; the hotel chosen did not meet certain criteria and no longer exists at the moment; the period in which the review was left; and so on.
 
-Analiză factorilor se va face în funcție de variabile care țîn de hotel și variabile ce țîn de destinație. Primele au fost descrise mai sus, așa că in continuare voi vorbi despre analiză destinației unde voi utiliza variabile precum GDP (PIB) și variabilele dimensiunii culturale ale lui Hofstede.
+The factor analysis will be conducted based on the hotel and destination variables. The former has already been discussed in the paragraph above, thus in this section I will present the destination analysis, in which I will use factors such as GDP and Hofstede's cultural dimension variables.
 
-Variabilele lui Hofstede descriu efectele culturii unei societății asupra valorilor acesteia, și cum aceste valori se referă la comportament. De asemenea, variabilele fac parte dintr-o teorie cu același nume care este derivată din analiză factorială. Modelul lui Hofstede constă în 6 dimensiuni prezentate prin 6 variabile: indexul distanței puterii, individualism versus colectivism, masculinitate versus feminitate, indexul evitării incertitudinii, orientarea pe termen lung versus orientarea pe termen scurt și indulgență versus reținere. În continuare voi prezența câteva detalii despre fiecare variabilă.
+Hofstede's variables indicate how a society's culture affects its values and how these values influence behavior. The variables are also part of the same-named theory, which is derived from factor analysis. Hofstede's model consists of six dimensions represented by: power distance index; individualism versus collectivism; masculinity versus femininity; uncertainty avoidance index; long-term versus short-term orientation; indulgence versus restraint. I'll go over each variable in more depth below.
 
-**Indexul distanței puterii („power distance index”) (PDI)** reprezintă felul în care o societate gestionează inegalitățile dintre persoane. Oamenii din societățile cu un index ridicat acceptă o ordine ierarhică în care fiecare persoană are un loc al sau. Pe de altă parte, în societățile care prezintă un index scăzut, oamenii încearcă să egalizeze distribuția puterii.
+**The power distance index (PDI)** measures how a society manages inequalities between people. People in societies with a high index embrace a hierarchical structure in which everyone has their own place. On the other hand, in societies with a low index, people aim to equalize power distribution.
 
-O societate în care legăturile dintre indivizi sunt slabe, unde fiecare îi pasă numai de sine ori doar de familia să prezintă un **individualism (IDV)** ridicat. Societățile individualiste pot părea reci, de la climă la o dispunere întinsa a orașelor ori interacțiuni rezervate între persoane. 
+**Individualism (IDV)** is common in societies where interpersonal bonds are weak and everyone is concerned primarily with themselves or their families. Individualistic societies might appear cold, whether due to the climate, the wide structure of towns, or reserved interactions between individuals.
 
-**Masculinitatea (MAS)** reprezintă preferința unei societăți către realizări, eroism, asertivitate și recompense materiale pentru succes. Opusul sau, feminitatea, arată preferința pentru cooperare, modestie și grijă pentru cei slabi.
+**Masculinity (MAS)** is a society's predisposition for success, heroism, assertiveness, and material rewards. Femininity, on the other hand, demonstrates a tendency for cooperation, modesty, and concern for the weak.
 
-**Evitarea incertitudinii (UAI)** exprimă nivelul la care membrii unei societăți se simt amenințați de incertitudine, ambiguitate și situațîi necunoscute. Țările cu un index ridicat nu tolerează ideile și comportamentul neortodox. Pe de altă parte, țările cu un index scăzut au o atitudine mult mai relaxată, încearcă să evite conflictul și caută siguranță în reguli.
+The level to which people of a society feel intimidated by uncertainty, ambiguity, and unexpected situations is expressed by **uncertainty avoidance (UAI)**. Countries with a high index will not accept unconventional ideas or behavior. Countries with a low index, on the contrary, have a more relaxed attitude, aim to avoid conflict, and seek security through rules.
 
-**Orientarea pe termen lung (LTO)** denotă legătura unei culturi cu trecutul și acceptarea viitorului. Societățile cu un nivel scăzut preferă să mențină tradițiile și le este greu să accepte schimbarea. Pe de altă parte, cele cu un nivel înalt încurajează economisirea și eforturile către o educație modernă că un mod de a se pregăti pentru viitor.
+**Long-term orientation (LTO)** refers to a culture's attachment to the past as well as its acceptance of the future. Low-level societies value tradition and find it difficult to accept change, whereas high-level cultures encourage thrift and endeavors toward contemporary education as a means of preparing for the future.
 
-**Indulgență (IVR)** arată tendința unei societăți de a permite satisfacerea relativ liberă a nevoilor umane de baza și naturale ce țin de nevoia oamenilor a se bucură de viață și a se distra. Pe partea opusă, reținerea prezintă o societate care suprimă aceste nevoi și le înlocuiește cu norme sociale stricte.
+**Indulgence (IVR)** describes a society's tendency to allow relatively unrestricted satisfaction of basic and natural human needs related to people's desire to enjoy life and have fun. Restraint, on the other hand, indicates a culture that suppresses these urges and replaces them with rigid social standards.
 
-Observațiile sunt reprezentate de un număr de 80 de țări considerate unele dintre principalele destinații turistice urbane la nivel mondial.
+These observations are represented by a number of 80 countries considered some of the world's top urban tourist destinations.
+
 
 ![image](https://user-images.githubusercontent.com/76962878/190699798-fba97d72-32d5-428e-9141-4bfb5eeed2bd.png)
  
->Figură 1: Țările incluse în studiu (cu negru pe hartă)
+>Figure 1: Countries included in the study (black on the map)
 
-## Analiza Exploratorie a Factorilor
-Pentru analiză datelor voi folosi analiză exploratorie a factorilor. Această metodă este proiectată cu scopul de a identifica relațiile de baza dintre variabilele măsurate. Ajută la interpretarea datelor prin reducerea numărului de variabile înainte de a construi modelul de analiză. Totodată, va extrage variația comună maximă din toate variabilele și le va pune într-un scor comun.
+## Exploratory factor analysis (EFA)
+I'll apply exploratory factor analysis to analyze the dataset. This method is designed with the aim of identifying the underlying relationships between the measured variables. It helps to interpret the data by minimazing the number of variables before building the analysis model. It will also calculates the maximum common variance of all variables and combines them into a common score.
 
-După cum spune și numele, această analiză e folosită pentru cercetarea factorilor care afectează un anumit domeniu, o rată, o țară etc. Astfel, obiectivul meu va fi să conduc o analiză care în final să îmi arate dacă factorii aleși produc sau nu o variație în satisfacția clienților din industria hotelieră.
+This analysis, as the name implies, is used to explore factors that influence a specific section, rate, country, etc. As a result, my goal will be to conduct a study that will eventually indicate whether or not the selected factors cause variation in customer satisfaction in the hotel business.
 
-Pentru o prima modelare a datelor se va realiza o corelogramă cu toate variabilele pentru a vedea care dintre ele nu sunt folositoare analizei aflată în desfășurare ori dacă variabilele prezintă o corelație mult prea mare unele cu altele.
+For the initial data modeling, a correlogram will be created using all of the variables to determine which are not relevant for the ongoing analysis or if the variables have an excessively strong correlation with one another.
 
-Am ales analiză exploratorie a factorilor pentru acest studiu deoarece față de alte analize, modelul este mult mai conceptual și permite existența variabilelor latente (așa numiții factori). În domeniul de studiu ales - satisfacția clienților din industria hotelieră - e necesar să înțeleg cum diferiți factori influențează variația dintre variabile și dacă acestea produc o creștere/scădere a satisfacției, de aceea o analiză precum AEF e mult mai captivantă decât o altă.
+I selected exploratory factor analysis for this study since the model is considerably more conceptual than other methods and allows for latent variables (so-called factors). In the chosen field of study - customer satisfaction in the hospitality industry - understanding how different factors influence the variation between variables and whether they produce an increase or decrease in satisfaction is essential, which is why an analysis such as EFA is far more engaging than another.
 
-## Rezultate
+## Results
 
-* ### Corelograma indicilor KMO
+* ### KMO index correlation matrix
 
 ![image](https://user-images.githubusercontent.com/76962878/190699859-5727731f-f55a-4a40-b8d7-8ec40a679552.png)
 
->Figură 2: Heatmap KMO index
+>Figure 2: KMO index heatmap
 
-Din corelograma indicilor KMO putem află care este factorabilitatea valorilor principale. Valorile mari regăsite în diagramă (peste 0.6 - reprezentate cu albastru închis) reprezintă prezența unei corelații puternice între valorile analizate. De exemplu, pot spune că o mare majoritate a factorilor mei (în număr de 13) au potențial de a deveni factori principali în analiză. 
+The factorability of the main values can be determined using the correlogram of the KMO indices. The diagram's high values (over 0.6 - displayed by dark blue) indicate the presence of a strong correlation between the values tested. For example, I can state that the vast majority of my factors (13 in total) have the potential to become main factors in the study.
 
-Una dintre cele mai puternice legături se regăsește la ratingul calității somnului pentru hotelele analizate. De aici reiese că satisfacerea unui client e foarte conectată cu confortul primit în țară pe care o vizitează, și nivelul de odihnă de care are parte. Pe de altă parte, valoare PIB-ului precum și indexul pdi („distanță puterii”) joacă un rol la fel de important în ratingul final oferit hotelului, deci satisfacția clientului. Un PIB ridicat poate însemnă că țară vizitată este una dintre primele alegeri ale călătorilor, turismul având un rol foarte important în economia unei țări. Indexul pdi arată inclinația turiștilor de a pune accentul pe tipul de conducere și problemele politice a unei țări, înainte de a face alegerea unei vizite în țară respectivă. Astfel, valoarea ridicată arată cum instabilitatea unei țări și felul cum această pune valoare pe egalitatea dintre persoane poate afecta zona turistică a acesteia.
+One of the strongest correlations is seen in the sleep quality rating for the hotels investigated. According to this, a guest's pleasure appears to be strongly related to the level of comfort and relaxation they experience in the country they visit. On the other hand, the GDP value as well as the PDI index ("power distance") play an equally vital role in the final rating given to the hotel, and thus in customer satisfaction. A high GDP can indicate that the country visited is one of the top choices for travellers, as tourism plays a very important role in a country's economy. The PDI index measures tourists' inclination to consider a country's administration and political issues before deciding whether or not to visit that country. Thus, the high value demonstrates how a country's instability and the way it prioritizes equality among people can damage its tourism industry.
 
-* ### Varianța factorilor
+* ### Factor variance
 ![image](https://user-images.githubusercontent.com/76962878/190699970-17029732-1545-4c29-a8d1-a9939592d847.png)
 
->Figură 3: Tabel varianța factorilor
+>Figure 3: Factor variance table
 
-Pentru a știi de câți factori avem nevoie pentru analiză, ne vom uită la valorile proprii, ori așa numitele eigenvalues, care ne vor arată cât de mult varianta variabilelor este explicată de un factor. De exemplu, primul factor are o variație de 3.7 ceea ce înseamnă că factorul poate explică variația a 3.7 variabile.
+To determine how many factors are required for the analysis, I will examine the eigenvalues, which show how much of the variance in the variables is explained by each factor. For example, the variance of the first factor is 3.7, implying that the factor can explain the variance of 3.7 variables.
 
-Pentru estimarea numărului de factori voi folosi testul Bartlett. Vom acceptă drept factori acele variații cu un nivel mai mare decât rezultatul testului. Testul Bartlett cercetează ipoteza nulă care verifică dacă matricea de corelație este una identică adică presupună că nu există corelație prezența între variabile.
+The Bartlett test will be used to estimate the number of factors. I will accept as factors those variances at a higher level than the test result. The Bartlett test analyzes the null hypothesis, which evaluates whether the correlation matrix is identical, implying that there is no association between the variables.
 
-Pentru a respinge ipoteza nulă vom arată că valoare lui p statistic este mai mică decât 0.05, deci afirmăm că există corelație între variabile cu un nivel de încredere de 95%.
+To reject the null hypothesis, I need to prove that the statistical p-value is less than 0.05, showing that there is a 95% confidence level correlation between variables.
 
-Ponderea prezintă procentul de variație acoperit din variația totală pentru fiecare valoare în parte iar ponderea cumulată face o suma a tuturor ponderilor pentru a știi în final factorii care vor fi considerați potriviți pentru analiză.
+The weights reflect the percentage of variance covered of the overall variation for each value. The cumulative weights add all the weights together to determine which components are eligible for analysis.
  
  ![image](https://user-images.githubusercontent.com/76962878/190700021-6ba37b73-415e-492b-83af-d28753c0e959.png)
 
->Figură 4: Plot de varianță
+>Figure 4: Variance plot
 
-După criteriul Kaiser (prezentat cu verde în figura 4) avem doar 4 componente , cele care au variație mai mare decât 1. După criteriul Cattell avem tot 4 dar folosind un altfel de calcul: pierderea de varianta a componenței 5 față de componentă 4 este mai mare decât cea a componenței 4 față de componentă 3. Aceste două criterii sunt folosite pentru analiză componentelor principale mai mult decât pentru o analiză a factorilor, de aceea mă voi opri din căutarea numărului de factori la componentă 10 folosind testul Bartlett. 
+I have 4 components with variance greater than 1, according to the Kaiser criterion (indicated in green in Figure 4). There are also 4 according to the Cattell criterion, but it was calculated differently: the variance loss of component 5 when compared to component 4 is greater than the variance loss of component 4 when compared to component 3. Because these two criteria are utilized for principal component analysis rather than factor analysis, I will stop using the Bartlett test to determine the number of factors in component 10.
 
-Următorul pas este folosirea rotației care ajută la obținerea unei structuri mult mai simple și ușor interpretabile. Pentru tipul de rotație, îmi voi îndrepta atenția spre rotația „varimax” care maximizează variația totală explicată de factori printr-o suma între corelațiilor factoriale și mediile pătratelor corelațiilor factoriale pe fiecare factor. În același timp, rotația de tip varimax are grijă că factorii creați să nu fie corelați (nu există ortogonalitate). 
-
-* ### Corelograma si analiza factorilor
+* ### Factor analysis and correlogram
  ![image](https://user-images.githubusercontent.com/76962878/190700038-d18074fd-4da9-497d-afb4-cb260e3f9988.png)
 
->Figură 5: Corelograma dintre variabile si factori
+>Figure 5: Correlogram between variables and factors
 
-Figura 5 prezintă coeficienții de corelație între variabilele principale și cei 10 factori. Pentru primul factor putem observă corelația puternică a acestuia cu orice ține de ratingul oferit hotelului. 
+The correlation coefficients between the main variables and the 10 factors are shown in Figure 5. For the first factor, I can see a strong correlation with anything associated to the hotel's rating.
 
-Criteriile de evaluare se încadrează în două categorii: subiective și obiective. Criteriile subiective sunt valoarea, calitatea somnului și serviciile iar cele obiective, care sunt predominante, sunt locația și camera. Curățenia este văzută că un criteriu subiectiv și obiectiv. 
+There are two types of rating criteria: subjective and objective. The subjective factors include value, sleep quality, and service, whereas the objective criteria, which are prominent, are location and room. Cleanliness is considered both subjective and objective.
 
-Acest prim factor arată cauzele ce țîn de satisfacția clienților din hotele, de aceea îl putem categoriza că fiind nivelul de confort a clienților.
+This first factor indicates the causes of consumer satisfaction in hotels; thus, I can classify it as the level of customer comfort.
 
-Pentru al doilea factor observăm că cea mai mare valoarea regăsită este la PIB și variabilă de individualitate a țării. Dacă pentru primul factor accentul este pe hotel, al doilea prezintă țară și economia să că fiind un factor definitoriu pentru satisfacția turiștilor. Aici vorbim de țări bogate care prezintă un procent ridicat al turismului. Totodată, prezența individualității arată o inclinație a turiștilor spre țări care nu sunt atât de primitoare, poate această inclinație denotă proveniența dintr-o astfel de țară a turiștilor ori o călătorie doar în scop de business și nu de turism. Factorul este invers corelat cu distanță puterii ceea ce arată că, în comparație cu nivelul unui individualism crescut al țării vizitate și PIB-ul ridicat, țară poate prezența o distribuție a puterii inegală. Deci, în concluzie, o țară bogată și rece poate avea un sistem economic bazat pe capitalism.
+The biggest value obtained for the second factor is in GDP and the country's individualism variable. If the first factor focuses on the hotel, for the second one the emphasis is placed on the country and its economy as a determining factor for tourist satisfaction. For this study, I am examining developed economies with a high rate of tourists. At the same time, the presence of individualism indicates a visitor preference for less friendly countries. Perhaps this predisposition indicates that the visitors are from such a country, or that they are on a business trip rather than a vacation.
 
-Factorul 3 este concentrat pe stelele hotelului și prețul. Atunci când descompunem ratingurile oferite hotelelor, aflăm că diferența între nivelele raportate de satisfacție a clienților este datorată de atributele hotelelor. Astfel, turiștii sunt dispuși să aleagă hotele care sunt mai populare și au o reputație bună în rândul clienților. Turiștii vor verifică site-uri precum TripAdvisor pentru alegerea unui loc în care să își petreacă vacanță, și totodată să le ofere o satisfacție ridicată. 
+The factor is inversely correlated to the power distance index, indicating that, despite the visiting country's high level of individualism and GDP, the country may have an unequal power distribution. In other words, a rich and cold country may have a capitalist economic system.
 
-În factorul 4 putem observă dorința unei vacanțe în țări care sunt orientate spre viitor și care prioritizează progresul. Corelația inversă cu indulgență unei țări duce la o întrebare: de ce ar fi inclinați turiștii spre țări care suprimă nevoia de distracție a oamenilor? Răspunsul la această întrebarea vine din comparația acestei variabile cu cea normal corelată. Progresul unei țări poate duce de cele mai multe ori la un nivel scăzut al dorinței de satisfacere a nevoilor umane ce țîn de distracția și nevoia oamenilor de a se bucură de viață.   
+Factor 3 is connected with hotel stars and prices. When we investigate the hotel ratings, we discover that the discrepancy in reported levels of customer satisfaction is linked to hotel features. As a result, travellers are more likely to select hotels that are popular and have a high reputation among customers. Tourists will consult sites such as TripAdvisor while deciding where to spend their vacation, as well as providing great satisfaction.
 
-Factorul 5 prezintă o corelație mare cu ratingul oferit pentru servicii. Uneori, serviciile oferite de hotele pot depășii așteptările clientului înainte de a plătii cazarea. Atât aspectele legate de așteptări cât și cele legate de performanță ale hotelului influențează satisfacția generală a clientului. Printre serviciile oferite de industria hotelieră se enumeră calitatea formării profesionale a personalului și amabilitatea, nivelul local de dezvoltare a ospitalității, mâncarea și băuturile oferite.
+In factor 4, we can detect a desire for a vacation in countries that are forward-looking and prioritize advancement. The inverse relationship with a country's indulgence raises the question: why would tourists be drawn to countries that limit people's urge for fun? The solution is found by comparing this variable to the positively correlated one. A country's progress can frequently result in a low level of desire to satisfy human needs for entertainment and people's need to enjoy life.
 
-Următorii doi factori analizează locația hotelului. O caracteristică importantă care determina un nivel ridicat al satisfacției este comoditatea oferită de serviciile hoteliere. Pentru un turist, este mult mai convenabil că locația aleasă să fie cât mai aproape de atracțiile oferite de fiecare oraș în parte, decât să piardă mult timp doar cu transportul dintr-o parte în altă. Variabilă „hotel distance” arată cât de departe este hotelul de centrul orașului. În concluzie, locația hotelului este o parte integrantă a calității generale a serviciilor ospitaliere și afectează direct ratingul general. Clienții care sunt mulțumiți de servicii au tendința să ofere ratinguri ridicate locației.
+Factor 5 has a high correlation with the service rating. Hotel services may sometimes exceed the customer's expectations prior to paying for accommodation. Overall client satisfaction is determined by both the hotel's expectations and performance. The hotel industry provides services such as the quality of personnel training and friendliness, the local level of hospitality development, and the food and beverages available.
 
-Factorul 8, precum F3, prezintă atributele hotelului că fiind o cauza determinantă a satisfacerii generale a turiștilor. Astfel, se pare că mărimea hotelului reprezentată prin numărul de camere este un factor de decizie pentru clienți. 
+The next two factors consider the hotel's location. The convenience provided by hotel services is a key factor in determining a high degree of satisfaction. It is much more convenient for a traveler if the chosen location is as close to the attractions offered in each city as possible, rather than wasting a lot of time just traveling from one place to another. The 'hotel distance' variable indicates the distance between the hotel and the city center. Therefore, hotel location is an important factor in the overall quality of hospitality services and has a direct impact on the total rating. Guests that are pleased with the service tend to give the location good ratings.
 
-În continuare, putem observă o preferința pentru țările cu un nivel ridicat de masculinitate. Această tendința se atribuie țărilor care au o istorie bogată precum Japonia ori țări europene influențate de cultură germană (Wikipedia). 
+Hotel features, such as F3, are presented as a contributor of overall tourist satisfaction for factor 8. Thus, the size of the hotel, as reflected by the number of rooms, appears to influence customer decisions.
 
-În final, ultimul factor prezintă o corelație inversă cu indexul UAI care arată predispunerea turiștilor pentru țările care nu „evita incertitudinea”. Astfel, în contextul actual este important pentru călători să aleagă țări care acceptă noul și diferitul, societatea tinde să impună mai puține reglementări, iar mediul permite liberă exprimare. 
+Furthermore, a preference for countries with a high level of masculinity can be seen. This trend can be traced back to countries with a rich history, such as Japan, or to European countries influenced by German culture (Wikipedia).
 
-Cei 10 factori analizați, variabilele conținute și categoria din care fac parte sunt prezentate mai jos:
-1.	Confort: overall_rating, cleanliness_rating, rooms_rating, sleepquality_rating, value_rating
-2.	Bogăția unei țări: GDP, IDV, PDI (invers)
-3.	Hotel: hotel_stars, price
-4.	Progres: Indexul LTO, IVR (invers)
-5.	Servicii: service_rating
-6.	Destinație: location_rating
-7.	Comoditate: hotel_distance
-8.	Mărimea hotelului: hotel_norooms
-9.	Istorie și atracții: MAS
-10.	Libera exprimare: UAI (invers)
+Consequently, the last element has an inverse relationship with the UAI index, which indicates tourists' preference for destinations that do not "avoid uncertainty." As a result, in the current setting, it is critical for travelers to select countries that welcome the new and different, where society imposes less laws and the atmosphere allows for free expression.
 
-* ### Scoruri factoriale
+The 10 factors analyzed, the variables they contain, and the group to which they belong are listed below.
+1. Comfort: overall_rating, cleanliness_rating, rooms_rating, sleepquality_rating, value_rating
+2. The country's wealth: GDP, IDV, PDI (inverse)
+3. Hotel: hotel_stars, price
+4. Development: LTO index, IVR (inverse)
+5. Services: service_rating
+6. Location: location_rating
+7. Convenience: hotel_distance
+8. Hotel size: hotel_norooms
+9. History and attractions: MAS
+10. Freedom of expression: UAI (inverse)
+
+* ### Factor scores
 ![image](https://user-images.githubusercontent.com/76962878/190700065-c010678b-c03f-493c-b2b4-0432421a1cfe.png)
 
->Figură 6: Plot scoruri factoriale
+>Figure 6: Score plot
 
-În figura 6, putem vedea conexiunea dintre fiecare factori și variabilele inițiale. După cum putem observă, nivelul de confort al unui hotel (F1) și bogăția țării în care se află hotelul (F2) se poate regăși în țări dezvoltate precum Japonia, Nouă Zeelandă și Australia și în multe țări din Europa. Astfel, colțul din dreapta sus prezintă acele țări care au ratinguri ridicate și prezintă o mare individualitate si un PIB ridicat. 
+Figure 6 shows the relationship between each factor and the initial variables. As we can see, industrialized countries such as Japan, New Zealand, and Australia, as well as several European countries, have high levels of hotel comfort (F1) and wealth (F2). As a result, the top right corner displays countries with high ratings and high individuality and GDP.
 
-Dacă ar fi să împărțim plotul în două parți, în partea de sus observăm o împrăștiere a țărilor dezvoltate iar în cea de jos se află țările cu un PIB mai scăzut în comparație cu cele de mai sus. Totodată, țările din partea dreapta a plotului sunt acele țări care prezintă ratinguri ridicate a hotelurilor analizate, iar în partea stânga regăsim acele hoteluri în care regăsim ratinguri scăzute ale serviciilor ospitaliere. 
+If we were to divide the plot into two halves, we can find a scattering of developed countries at the top and countries with lesser GDP than those above at the bottom. At the same time, the countries on the right side of the plot have good ratings for the hotels surveyed, while the countries on the left have low ratings for hospitality services.
 
-* ### Corelații
+* ### Correlations
+* 
 ![image](https://user-images.githubusercontent.com/76962878/190700082-31c82ed5-0daf-4787-88b2-ef2e2915a7e9.png)  | ![image](https://user-images.githubusercontent.com/76962878/190700096-6e1f8f56-38d6-4432-8c36-404f08011a42.png)
 ------------- | -------------
-Figură 8: Cercul corelațiilor pentru F1 si F2  | Figură 7: Cercul corelațiilor pentru F3 si F4
+Figure 8: Correlation circle for F1 and F2  | Figure 7: Correlation circle for F3 and F4
 
-Pentru cercul corelațiilor dintre factori, putem observă că atunci când alegem să facem o interpretare între primii doi factori, orice alți factori prezintă o inclinație a valorilor spre centrul cercului deoarece nivelul de semnificație scade. De aceea, am ales să fac o interpretare a factorilor 1 și 2, pentru o mai ușoară prezentare a datelor. Cele două cercuri sunt caracteristice testului Bartlett (cu albastru închis în figura 8) și a testului Cattell (cu albastru deschis). 
+When we choose to interpret the first two factors, we can notice that any other factors show a tilt of values towards the center of the circle as the level of significance falls. Therefore, I've decided to interpret the factors 1 and 2 to make the data easier to display. The two circles in Figure 8 represent the Bartlett test (dark blue) and the Cattell test (light blue).
 
-Distribuția observățiilor în spațiul celor doi primi factori arată o mai mare aglomerație pe linia F2 pentru majoritatea variabilelor cu excepția individualități, a PIB și PDI care sunt amplasate la extremitățile cercului corelațiilor, pe linia F1.  Comparând acest cerc cu corelograma putem conclude că această aglomerație a valorilor pe linia F2 este rezultatul unor valori foarte apropiate de 0. Datorită unor diferențe destul de mari între cei doi factori, avem această dispersie a valorilor.
+Most variables show higher clustering on the F2 line in the space of the first two factors, with the exception of individuals, GDP, and PDI, which are positioned at the extremes of the correlation circle, on the F1 line. By comparing this circle to the correlogram, we may determine that the clustering of values on line F2 is caused by values that are very close to 0. We have this dispersion of results because of the significant variances between the two factors.
 
-Totodată, majoritatea variabilelor se află în cadranul 1 și 4 a cercului, ceea ce denotă o corelație pozitivă cu primul factor analizat. Deci, valorile aflate în cadranul 1 prezintă o corelație pozitivă cu ambii factori analizați, iar cele aflate în cadranul 4 prezintă o corelație pozitivă cu primul factor și o corelație negativă cu cel de al doilea. 
+Meanwhile, the majority of the variables are in quadrants 1 and 4 of the circle, indicating a positive connection with the first factor examined. As a result, the values in quadrant 1 have a positive correlation with both factors studied, whereas those in quadrant 4 have a positive correlation with the first factor but a negative correlation with the second.
 
-## Concluzii
+## Conclusions
 
-În concluzie, creșterea numărului recenziilor și a rezervărilor online - călătorii (în special cei care scriu recenzii pe TripAdvisor.com și alte servicii online) sunt din ce în ce mai înclinați să aleagă hotelurile pe baza reputației lor online, ceea ce crește șansele că hotelurile de înaltă calitate să fie selectate.  Abundența din ce în ce mai mare a recenziilor online și a informațiilor legate despre țările vizitate a dus la decizii mai bine informate legate de selectarea hotelurilor și, în cele din urmă, la o mai bună satisfacție generală a clienților. 
+In summary, the increase in online reviews and bookings indicates that travelers (particularly those who write reviews on TripAdvisor.com and other online services) are strongly inclined to choose hotels based on their online reputation, increasing the likelihood of high-quality hotels being chosen. The growing availability of online reviews and related information about the countries visited has resulted in more educated hotel selection decisions and, eventually, higher overall customer satisfaction.
 
-## Bibliografie
+## Bibliography
 https://en.wikipedia.org/wiki/Hofstede%27s_cultural_dimensions_theory
 https://www.hofstede-insights.com/models/national-culture/
 https://towardsdatascience.com/factor-analysis-a-complete-tutorial-1b7621890e42
