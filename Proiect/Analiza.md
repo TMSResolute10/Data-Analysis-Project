@@ -21,7 +21,7 @@ The level to which people of a society feel intimidated by uncertainty, ambiguit
 These observations are represented by a number of 80 countries considered some of the world's top urban tourist destinations.
 
 
-![image](https://user-images.githubusercontent.com/76962878/190699798-fba97d72-32d5-428e-9141-4bfb5eeed2bd.png)
+![image](https://user-images.githubusercontent.com/76962878/194765470-158fa244-5021-4d90-8407-b8ce20d1a6e6.png)
  
 >Figure 1: Countries included in the study (black on the map)
 
@@ -47,7 +47,7 @@ The factorability of the main values can be determined using the correlogram of 
 One of the strongest correlations is seen in the sleep quality rating for the hotels investigated. According to this, a guest's pleasure appears to be strongly related to the level of comfort and relaxation they experience in the country they visit. On the other hand, the GDP value as well as the PDI index ("power distance") play an equally vital role in the final rating given to the hotel, and thus in customer satisfaction. A high GDP can indicate that the country visited is one of the top choices for travellers, as tourism plays a very important role in a country's economy. The PDI index measures tourists' inclination to consider a country's administration and political issues before deciding whether or not to visit that country. Thus, the high value demonstrates how a country's instability and the way it prioritizes equality among people can damage its tourism industry.
 
 * ### Factor variance
-![image](https://user-images.githubusercontent.com/76962878/194668543-c1402b05-0ef7-4f89-88c4-98b3849f380c.png)
+![image](https://user-images.githubusercontent.com/76962878/194765485-a282cfa8-3c7c-4e2a-ba44-93e041ea43cc.png)
 
 
 >Figure 3: Factor variance table
