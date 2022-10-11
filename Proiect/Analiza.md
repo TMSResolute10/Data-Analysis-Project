@@ -117,7 +117,6 @@ Figure 6 shows the relationship between each factor and the initial variables. A
 If we were to divide the plot into two halves, we can find a scattering of developed countries at the top and countries with lesser GDP than those above at the bottom. At the same time, the countries on the right side of the plot have good ratings for the hotels surveyed, while the countries on the left have low ratings for hospitality services.
 
 * ### Correlations
-* 
 ![image](https://user-images.githubusercontent.com/76962878/190700082-31c82ed5-0daf-4787-88b2-ef2e2915a7e9.png)  | ![image](https://user-images.githubusercontent.com/76962878/190700096-6e1f8f56-38d6-4432-8c36-404f08011a42.png)
 ------------- | -------------
 Figure 8: Correlation circle for F1 and F2  | Figure 7: Correlation circle for F3 and F4
