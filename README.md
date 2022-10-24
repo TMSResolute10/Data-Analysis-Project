@@ -13,7 +13,7 @@ Heatmap KMO index |  Factor and variables correlogram
 :-------------------------:|:-------------------------:
 ![image](https://user-images.githubusercontent.com/76962878/190694547-44afdad8-0a1f-42f6-893b-119e24dd443e.png)  | ![image](https://user-images.githubusercontent.com/76962878/190698093-11637218-6c89-4a89-a576-9ee1a3527f3b.png)
 
-For a more detailed analysis click [here](Proiect/Analiza.md).
+For a more detailed analysis click [here](Project/Analiza.md).
 
 
 
