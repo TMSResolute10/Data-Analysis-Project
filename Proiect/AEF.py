@@ -1,14 +1,12 @@
 import numpy as np
-import pandas as pd
 import ACP as acp
-import scipy.stats as sts  # what does this mean
+import scipy.stats as sts
 
-# clasa care incapsuleaza o implementare de AEF
+
 class AEF:
-    def __init__(self, matrix):  # matrix este numpy.ndarray
+    def __init__(self, matrix):
         self.X = matrix
 
-        # instantiere model ACP
         model = acp.ACP(self.X)
         self.Xstd = model.getXstd()
         self.R = model.getR()
@@ -24,7 +22,6 @@ class AEF:
         psi = np.diag(epsilons)
         v_ = loadings @ np.transpose(loadings) + psi
 
-        # calculul matricei identitate estimate
         I_ = np.linalg.inv(v_) @ v
         detI = np.linalg.det(I_)
 
