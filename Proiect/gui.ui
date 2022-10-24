@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1283</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*  ------------------------------------------------------------------------  */
+/* QtMaterial - https://github.com/UN-GCPDS/qt-material
+/* By Yeison Cardona - GCPDS
+/*  ------------------------------------------------------------------------  */
+
+*{
+  color: #2F2F31;
+  font-family: &quot;IBM Plex Sans SemiBold&quot;;
+  line-height: {{line_height}};
+  font-size: 25px;
+background-color: #000000;
+  selection-background-color: #F3F3F3;
+  selection-color: #2F2F2F;
+
+}
+
+
+
+*:focus {
+   outline: none;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  Custom colors  */
+
+.danger{
+  color: #D91E27;
+}
+
+.warning{
+  color: #24F2A7;
+}
+
+.success{
+  color: #F87C0A;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  Basic widgets  */
+
+QWidget {
+  background-color: #F3F3F3;
+}
+
+QFrame {
+  background-color: #FFFFFF;
+}
+
+QSplitter {
+  background-color: transparent;
+  border: none
+}
+
+QStatusBar {
+  color: #2F2F31;
+  background-color: #FFFFFF20;
+  border-radius: 0px;
+}
+
+MplWidget {
+	padding-left: 20px;
+}
+
+QScrollArea,
+QStackedWidget,
+QWidget &gt; QToolBox,
+QToolBox &gt; QWidget,
+QTabWidget &gt; QWidget {
+  border: none;
+}
+
+QTabWidget::pane {
+  border: none;
+margin: -12px -9px -13px -12px;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  Inputs  */
+
+QDateTimeEdit,
+QSpinBox,
+QDoubleSpinBox,
+QTextEdit,
+QLineEdit,
+QPushButton {
+  color: #ECECEC;
+  background-color: #ECECEC;
+  border-top: #ECECEC;
+  border-top-style: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  padding: 8px 16px ;
+  height: 18px;
+}
+
+QDateTimeEdit,
+QSpinBox,
+QDoubleSpinBox,
+QTreeView,
+QListView,
+QLineEdit,
+QComboBox {
+  padding-left: 15px;
+  border-radius: 0px;
+  background-color: #2f2f31;
+  border-width: 0 0 2px 0;
+  border-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+QPlainTextEdit {
+  border-radius: 4px;
+  padding: 8px 16px;
+  background-color: #000000;
+  
+}
+
+QDateTimeEdit:disabled,
+QSpinBox:disabled,
+QDoubleSpinBox:disabled,
+QTextEdit:disabled,
+QLineEdit:disabled {
+  color: #ECECEC20;
+  background-color: #2f2f3170;
+  border: #ECECEC20;
+border-style: solid;
+  border-width: 2px;
+  border-width: 0 0 2px 0;
+  padding: 8px 16px ;
+  border-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+QTextEdit {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #2f2f31;
+}
+
+QDateTimeEdit:disabled,
+QSpinBox:disabled,
+QDoubleSpinBox:disabled,
+QTextEdit:disabled,
+QLineEdit:disabled {
+  color: #ECECEC20;
+  background-color: #2f2f3175;
+  border: #ECECEC20;
+border-style: solid;
+  border-width: 2px;
+  border-width: 0 0 2px 0;
+}
+
+QComboBox {
+  color: #ECECEC;
+  border: #ECECEC;
+border-style: solid;
+  border-width: 1px;
+  border-width: 0 0 2px 0;
+  background-color: #2f2f31;
+  border-radius: 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  height: 36px;
+}
+
+QComboBox:disabled {
+  color: #ECECEC20;
+  background-color: #2f2f3175;
+  border-bottom-style: 2px solid;
+  border-bottom:  #ECECEC20;
+}
+QComboBox::drop-down {
+  border: none;
+  color: #ECECEC;
+  width: 20px;
+}
+QComboBox::down-arrow {
+  image: url(icon:/primary/downarrow.svg);
+  margin-right: 10px;
+}
+QComboBox::down-arrow:disabled {
+  image: url(icon:/disabled/downarrow.svg);
+  margin-right: 10px;
+}
+
+QComboBox QAbstractItemView {
+  background-color: #2f2f31;
+  border: #FFFFFF;
+border-style: solid;
+  border-width: 2px;
+  border-radius: 4px;
+}
+
+QComboBox[frame='false'] {
+  color: #ECECEC;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+QComboBox[frame='false']:disabled {
+  color: #ECECEC20;
+}
+QDateTimeEdit::up-button,
+QDoubleSpinBox::up-button,
+QSpinBox::up-button {
+  subcontrol-origin: border;
+  subcontrol-position: top right;
+  width: 20px; /* 16 + 2*1px border-width = 15px padding + 3px parent border */
+  image: url(icon:/primary/uparrow.svg);
+  border-width: 0px;
+  margin-right: 5px;
+}
+
+QDateTimeEdit::up-button:disabled,
+QDoubleSpinBox::up-button:disabled,
+QSpinBox::up-button:disabled {
+  image: url(icon:/disabled/uparrow.svg);
+}
+
+QDateTimeEdit::down-button,
+QDoubleSpinBox::down-button,
+QSpinBox::down-button {
+  subcontrol-origin: border;
+  subcontrol-position: bottom right;
+  width: 20px;
+  image: url(icon:/primary/downarrow.svg);
+  border-width: 0px;
+  border-top-width: 0;
+  margin-right: 5px;
+}
+
+QDateTimeEdit::down-button:disabled,
+QDoubleSpinBox::down-button:disabled,
+QSpinBox::down-button:disabled {
+  image: url(icon:/disabled/downarrow.svg);
+}
+
+QPushButton {
+  margin: 0px;
+  padding: 0px 16px;
+  height: 34px;
+  min-height: 34px;
+  max-height: 34px;
+
+}
+
+QPushButton:checked,
+QPushButton:pressed {
+  color: #000000;
+  background-color: #ECECEC;
+}
+
+QPushButton:flat {
+  padding: 5px;
+  margin: 0px;
+  color: #ECECEC;
+  border: none;
+  background-color: transparent;
+}
+
+QPushButton:flat:hover {
+  background-color: #ECECEC20;
+}
+
+QPushButton:flat:pressed,
+QPushButton:flat:checked {
+  background-color: #ECECEC10;
+}
+
+QPushButton:disabled,
+QPushButton:flat:disabled {
+  color: #FFFFFF75;
+  background-color: transparent;
+  border-color:  #2f2f31;
+}
+
+QPushButton:disabled {
+  border: #FFFFFF75;
+	border-width: 2px solid;
+}
+
+QPushButton:checked:disabled {
+  color: #2f2f31;
+  background-color: #FFFFFF;
+  border-color:  #FFFFFF;
+}
+
+QTabBar{
+  color: red;
+}
+
+QTabBar::tab {
+  color: #909597;
+  font-size: 14px;
+background-color: #ECECEC;
+margin-right: 1px;
+  font-family: &quot;IBM Plex Sans Medium&quot;;
+}
+
+QTabBar::tab:bottom,
+QTabBar::tab:top{
+  padding: 0 43px;
+  height: 30px;
+}
+
+QTabBar::tab:left,
+QTabBar::tab:right{
+  padding: 15px 0;
+  width: 30px;
+}
+
+QTabBar::tab:top:selected,
+QTabBar::tab:top:hover {
+  color: #000000;
+font-family: &quot;IBM Plex Sans SemiBold&quot;;
+background-color: #FFFFFF;
+  border: solid black;
+border-radius: 0;
+border-width: 1px 0 0 0;
+}
+
+QTabBar::tab:bottom:selected,
+QTabBar::tab:bottom:hover {
+  color: #ECECEC;
+  border-top: #ECECEC;
+border-top-style: 2px solid;
+}
+
+QTabBar::tab:right:selected,
+QTabBar::tab:right:hover {
+  color: #ECECEC;
+  border-left: #ECECEC;
+border-left-style: 2px solid;
+}
+
+QTabBar::tab:left:selected,
+QTabBar::tab:left:hover {
+  color: #ECECEC;
+  border-right: #ECECEC;
+border-right-style: 2px solid;
+}
+
+QTabBar QToolButton:hover,
+QTabBar QToolButton {
+  border: 20px;
+  background-color: #000000;
+}
+
+QTabBar QToolButton::up-arrow {
+  image: url(icon:/disabled/uparrow2.svg);
+}
+
+QTabBar QToolButton::up-arrow:hover {
+  image: url(icon:/primary/uparrow2.svg);
+}
+
+QTabBar QToolButton::down-arrow {
+  image: url(icon:/disabled/downarrow2.svg);
+}
+
+QTabBar QToolButton::down-arrow:hover {
+  image: url(icon:/primary/downarrow2.svg);
+}
+
+QTabBar QToolButton::right-arrow {
+  image: url(icon:/primary/rightarrow2.svg);
+}
+
+QTabBar QToolButton::right-arrow:hover {
+  image: url(icon:/disabled/rightarrow2.svg);
+}
+
+QTabBar QToolButton::left-arrow {
+  image: url(icon:/primary/leftarrow2.svg);
+}
+
+QTabBar QToolButton::left-arrow:hover {
+  image: url(icon:/disabled/leftarrow2.svg);
+}
+
+QTabBar::close-button {
+  image: url(icon:/disabled/tab_close.svg);
+}
+
+QTabBar::close-button:hover {
+  image: url(icon:/primary/tab_close.svg);
+}
+
+QGroupBox {
+  background-color: #2f2f31;
+  border-radius: 4px;
+  padding: 15px;
+  padding-top: 30px;
+  line-height: 13px;
+}
+
+QGroupBox::title {
+  color: #2F2F3140;
+  subcontrol-origin: margin;
+  subcontrol-position: top left;
+  padding: 0 15px;
+  margin-top: 10px;
+  background-color: #000000;
+  background-color: transparent;
+  height: 20px;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QRadioButton and QCheckBox labels  */
+
+QRadioButton,
+QCheckBox {
+  spacing: 10px;
+  color: #2F2F31;
+  line-height: 14px;
+  height: 30px;
+  background-color: transparent;
+  spacing: 5px;
+}
+
+QRadioButton:disabled,
+QCheckBox:disabled {
+  color: #2F2F3130;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  General Indicators  */
+
+QGroupBox::indicator {
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+}
+
+QMenu::indicator,
+QListView::indicator,
+QTableWidget::indicator,
+QRadioButton::indicator,
+QCheckBox::indicator {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+ }
+
+/*  ------------------------------------------------------------------------  */
+/*  QListView Indicator  */
+
+QListView::indicator:checked,
+QListView::indicator:checked:selected,
+QListView::indicator:checked:focus {
+  image: url(icon:/primary/checklist.svg);
+}
+
+QListView::indicator:checked:selected:active {
+  image: url(icon:/primary/checklist_invert.svg);
+}
+
+QListView::indicator:checked:disabled {
+  image: url(icon:/disabled/checklist.svg);
+}
+
+QListView::indicator:indeterminate,
+QListView::indicator:indeterminate:selected,
+QListView::indicator:indeterminate:focus {
+  image: url(icon:/primary/checklist_indeterminate.svg);
+}
+
+QListView::indicator:indeterminate:selected:active {
+  image: url(icon:/primary/checklist_indeterminate_invert.svg);
+}
+
+QListView::indicator:indeterminate:disabled {
+  image: url(icon:/disabled/checklist_indeterminate.svg);
+}
+QTableView::indicator:enabled:checked,
+QTableView::indicator:enabled:checked:selected,
+QTableView::indicator:enabled:checked:focus {
+  image: url(icon:/primary/checkbox_checked.svg);
+}
+
+QTableView::indicator:checked:selected:active {
+  image: url(icon:/primary/checkbox_checked_invert.svg);
+}
+
+QTableView::indicator:disabled:checked,
+QTableView::indicator:disabled:checked:selected,
+QTableView::indicator:disabled:checked:focus {
+  image: url(icon:/disabled/checkbox_checked.svg);
+}
+
+QTableView::indicator:enabled:unchecked,
+QTableView::indicator:enabled:unchecked:selected,
+QTableView::indicator:enabled:unchecked:focus {
+  image: url(icon:/primary/checkbox_unchecked.svg);
+}
+
+QTableView::indicator:unchecked:selected:active {
+  image: url(icon:/primary/checkbox_unchecked_invert.svg);
+}
+
+QTableView::indicator:disabled:unchecked,
+QTableView::indicator:disabled:unchecked:selected,
+QTableView::indicator:disabled:unchecked:focus {
+  image: url(icon:/disabled/checkbox_unchecked.svg);
+}
+
+QTableView::indicator:enabled:indeterminate,
+QTableView::indicator:enabled:indeterminate:selected,
+QTableView::indicator:enabled:indeterminate:focus {
+  image: url(icon:/primary/checkbox_indeterminate.svg);
+}
+
+QTableView::indicator:indeterminate:selected:active {
+  image: url(icon:/primary/checkbox_indeterminate_invert.svg);
+}
+
+QTableView::indicator:disabled:indeterminate,
+QTableView::indicator:disabled:indeterminate:selected,
+QTableView::indicator:disabled:indeterminate:focus {
+  image: url(icon:/disabled/checkbox_indeterminate.svg);
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QCheckBox and QGroupBox Indicator  */
+
+QCheckBox::indicator:checked,
+QGroupBox::indicator:checked {
+  image: url(icon:/primary/checkbox_checked.svg);
+}
+
+QCheckBox::indicator:unchecked,
+QGroupBox::indicator:unchecked {
+  image: url(icon:/primary/checkbox_unchecked.svg);
+}
+
+QCheckBox::indicator:indeterminate,
+QGroupBox::indicator:indeterminate {
+  image: url(icon:/primary/checkbox_indeterminate.svg);
+}
+
+QCheckBox::indicator:checked:disabled,
+QGroupBox::indicator:checked:disabled {
+  image: url(icon:/disabled/checkbox_checked.svg);
+}
+
+QCheckBox::indicator:unchecked:disabled,
+QGroupBox::indicator:unchecked:disabled {
+  image: url(icon:/disabled/checkbox_unchecked.svg);
+}
+
+QCheckBox::indicator:indeterminate:disabled,
+QGroupBox::indicator:indeterminate:disabled {
+  image: url(icon:/disabled/checkbox_indeterminate.svg);
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QRadioButton Indicator  */
+
+QRadioButton::indicator:checked {
+  image: url(icon:/primary/radiobutton_checked.svg);
+}
+
+QRadioButton::indicator:unchecked {
+  image: url(icon:/primary/radiobutton_unchecked.svg);
+}
+
+QRadioButton::indicator:checked:disabled {
+  image: url(icon:/disabled/radiobutton_checked.svg);
+}
+
+QRadioButton::indicator:unchecked:disabled {
+  image: url(icon:/disabled/radiobutton_unchecked.svg);
+}
+
+QDockWidget {
+  color: #2F2F31;
+  border: #2f2f31;
+border-style: 2px solid;
+  titlebar-close-icon: url(icon:/primary/close.svg);
+  titlebar-normal-icon: url(icon:/primary/float.svg);
+  border-radius: 4px;
+}
+
+QDockWidget::title {
+  text-align: left;
+  padding-left: 35px;
+  padding: 3px;
+  margin-top: 4px;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QComboBox indicator  */
+
+QComboBox::indicator:checked {
+  image: url(icon:/primary/checklist.svg);
+}
+
+QComboBox::indicator:checked:selected {
+  image: url(icon:/primary/checklist_invert.svg);
+}
+
+QComboBox::item,
+QCalendarWidget QMenu::item,
+QMenu::item {
+  height: 26px;
+  border: 8px solid transparent;
+  color: #2F2F31;
+}
+
+
+QCalendarWidget QMenu::item,
+QMenu::item {
+  padding: 0px 25px 0px 20px;
+}
+
+QComboBox::item:selected,
+QCalendarWidget QMenu::item:selected,
+QMenu::item:selected {
+  color: #2F2F2F;
+  background-color: #F3F3F3;
+  border-radius: 4px;
+}
+
+QComboBox::item:disabled,
+QCalendarWidget QMenu::item:disabled,
+QMenu::item:disabled {
+  color: #2F2F3130;
+}
+
+QCalendarWidget QMenu,
+QMenu {
+  background-color: #2f2f31;
+  border: #FFFFFF;
+border-style: 2px solid;
+  border-radius: 4px;
+  margin-top: 3px;
+}
+QMenu::separator {
+  height: 2px;
+  background-color: #FFFFFF;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+QMenu::right-arrow{
+  image: url(icon:/primary/rightarrow.svg);
+  width: 15px;
+  height: 15px;
+}
+
+QMenu::right-arrow:selected{
+  image: url(icon:/disabled/rightarrow.svg);
+}
+
+QMenu::indicator:non-exclusive:unchecked {
+  image: url(icon:/primary/checkbox_unchecked.svg);
+}
+
+QMenu::indicator:non-exclusive:unchecked:selected {
+  image: url(icon:/primary/checkbox_unchecked_invert.svg);
+}
+
+QMenu::indicator:non-exclusive:checked {
+  image: url(icon:/primary/checkbox_checked.svg);
+}
+
+QMenu::indicator:non-exclusive:checked:selected {
+  image: url(icon:/primary/checkbox_checked_invert.svg);
+}
+
+QMenu::indicator:exclusive:unchecked {
+  image: url(icon:/primary/radiobutton_unchecked.svg);
+}
+
+QMenu::indicator:exclusive:unchecked:selected {
+  image: url(icon:/primary/radiobutton_unchecked_invert.svg);
+}
+
+QMenu::indicator:exclusive:checked {
+  image: url(icon:/primary/radiobutton_checked.svg);
+}
+
+QMenu::indicator:exclusive:checked:selected {
+  image: url(icon:/primary/radiobutton_checked_invert.svg);
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QMenuBar  */
+
+QMenuBar {
+  background-color: #2f2f31;
+  color: #2F2F31;
+}
+
+QMenuBar::item {
+  height: 30px;
+  padding: 8px;
+  background-color: transparent;
+  color: #2F2F31;
+}
+
+QMenuBar::item:selected,
+QMenuBar::item:pressed {
+  color: #2F2F2F;
+  background-color: #F3F3F3;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QToolBox  */
+
+QToolBox::tab {
+  background-color: #2f2f31;
+  color: #2F2F31;
+  border-radius: 4px;
+}
+
+QToolBox::tab:selected,
+QToolBox::tab:hover {
+  background-color: #ECECEC20;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QProgressBar  */
+
+QProgressBar {
+  border-radius: 0;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: transparent;
+}
+
+QProgressBar::chunk {
+  background-color: #ECECEC;
+}
+QScrollBar:horizontal {
+  border: 0;
+  background: #ECECEC;
+  height: 8px;
+}
+
+QScrollBar:vertical {
+  border: 0;
+  background: #ECECEC;
+  width: 8px;
+}
+
+QScrollBar::handle:horizontal {
+  background: #ECECEC;
+  min-width: 20px;
+}
+
+QScrollBar::handle:vertical {
+  background: #ECECEC;
+  min-height: 20px;
+}
+
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:horizontal:hover {
+  background: #ECECEC;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+  border: 0;
+  background: transparent;
+  width: 0px;
+  height: 0px;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QSlider  */
+
+QSlider:horizontal {
+  min-height: 20px;
+  max-height: 20px;
+}
+
+QSlider:vertical {
+  min-width: 20px;
+  max-width: 20px;
+}
+
+QSlider::groove:horizontal {
+  height: 4px;
+  background: #393939;
+  margin: 0 10px;
+}
+
+QSlider::groove:vertical {
+  width: 4px;
+  background: #393939;
+  margin: 10px 0;
+  border-radius: 20px;
+}
+
+QSlider::handle:horizontal {
+  image: url(icon:/primary/slider.svg);
+  width: 20px;
+  height: 20px;
+  margin: -20px -10px;
+}
+
+QSlider::handle:vertical {
+  image: url(icon:/primary/slider.svg);
+  border-radius: 20px;
+  width: 20px;
+  height: 20px;
+  margin: -10px -20px;
+}
+
+QSlider::add-page {
+background: #2f2f31;
+}
+
+QSlider::sub-page {
+background: #ECECEC;
+}
+
+QLabel {
+  border: none;
+  background: transparent;
+  color: #2F2F31;
+
+}
+
+QLabel:disabled {
+  color: #2F2F3120
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  VLines and HLinex  */
+
+QFrame[frameShape=&quot;4&quot;] {
+    background: none;
+}
+
+QFrame[frameShape=&quot;5&quot;] {
+    background: none;
+}
+
+QFrame[frameShape=&quot;4&quot;],
+QFrame[frameShape=&quot;5&quot;] {
+  border-color: #FFFFFF;
+}
+
+QToolBar {
+  background: #000000;
+  border: 0px solid;
+}
+QToolBar:horizontal {
+  border-bottom: #FFFFFF;
+border-bottom-style: 1px solid ;
+}
+
+QToolBar:vertical {
+  border-right:  #FFFFFF;
+border-right-style: 1px solid;
+}
+
+
+QToolBar::handle:horizontal {
+  image: url(icon:/primary/toolbar-handle-horizontal.svg);
+}
+
+QToolBar::handle:vertical {
+  image: url(icon:/primary/toolbar-handle-vertical.svg);
+}
+
+QToolBar::separator:horizontal {
+  border-right:  #FFFFFF;
+border-right-style: 1px solid;
+  border-left:  #FFFFFF;
+border-left-style: 1px solid;
+  width: 1px;
+}
+
+QToolBar::separator:vertical {
+  border-top:  #FFFFFF;
+border-top-style: 1px solid;
+  border-bottom:  #FFFFFF;
+border-bottom-style: 1px solid;
+  height: 1px;
+}
+
+QToolButton {
+  background: #000000;
+  border: 0px;
+  height: 40px;
+  margin: 3px;
+  padding: 3px;
+  border-right:  #000000;
+border-right-style: 10px solid;
+  border-left:  #000000;
+border-left-style: 10px solid;
+}
+
+QToolButton:hover {
+  background: #FFFFFF;
+  border-right: #FFFFFF;
+border-right-style: 10px solid;
+  border-left:  #FFFFFF;
+border-left-style: 10px solid;
+}
+
+QToolButton:pressed {
+  background: #2f2f31;
+  border-right: #2f2f31;
+border-right-style: 10px solid;
+  border-left: #2f2f31;
+border-left-style: 10px solid;
+}
+
+QToolButton:checked {
+  background: #FFFFFF;
+  border-left:  #FFFFFF;
+border-left-style: 10px solid;
+  border-right:  #ECECEC;
+border-right-style: 10px solid;
+}
+
+QTreeView,
+QListView {
+  border-radius: 4px;
+  padding: 5px;
+  margin: 0px;
+}
+
+QTreeView::item,
+QListView::item {
+  padding: 5px;
+  min-height: 25px;
+  selection-color: #FFFFFF; /* For Windows */
+  border-color: transparent;  /* Fix #34 */
+}
+
+QTreeView::item:selected,
+QListView::item:selected {
+  background-color: #ECECEC20;
+  selection-background-color: #ECECEC20;
+  color: #2F2F31;
+  selection-color: #2F2F31; /* For Windows */
+}
+
+QTreeView::item:selected:focus,
+QListView::item:selected:focus {
+  background-color: #ECECEC;
+  selection-background-color: #ECECEC;
+  color: #2F2F2F;
+  selection-color: #2F2F2F; /* For Windows */
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  QTreeView  */
+
+QTreeView::branch{
+  background-color: #2F2F31;
+}
+
+QTreeView::branch:closed:has-children:has-siblings,
+QTreeView::branch:closed:has-children:!has-siblings {
+  image: url(icon:/primary/branch-closed.svg);
+}
+
+QTreeView::branch:open:has-children:!has-siblings,
+QTreeView::branch:open:has-children:has-siblings {
+  image: url(icon:/primary/branch-open.svg);
+}
+
+QTreeView::branch:has-siblings:!adjoins-item {
+  border-image: url(icon:/disabled/vline.svg) 0;
+}
+
+QTreeView::branch:has-siblings:adjoins-item {
+    border-image: url(icon:/disabled/branch-more.svg) 0;
+}
+
+QTreeView::branch:!has-children:!has-siblings:adjoins-item,
+QTreeView::branch:has-children:!has-siblings:adjoins-item {
+    border-image: url(icon:/disabled/branch-end.svg) 0;
+}
+
+QTreeView QHeaderView::section {
+  border: none;
+}
+QPushButton.danger {
+  border-color: #D91E27;
+  color: #D91E27;
+}
+
+QPushButton.danger:checked,
+QPushButton.danger:pressed {
+  color: #000000;
+  background-color: #D91E27;
+}
+
+QPushButton.warning{
+  border-color: #24F2A7;
+  color: #24F2A7;
+}
+
+QPushButton.warning:checked,
+QPushButton.warning:pressed {
+  color: #000000;
+  background-color: #24F2A7;
+}
+
+QPushButton.success {
+  border-color: #F87C0A;
+  color: #F87C0A;
+}
+
+QPushButton.success:checked,
+QPushButton.success:pressed {
+  color: #000000;
+  background-color: #F87C0A;
+}
+
+QPushButton.danger:flat:hover {
+  background-color: #D91E2720;
+}
+
+QPushButton.danger:flat:pressed,
+QPushButton.danger:flat:checked {
+  background-color: #D91E2710;
+  color: #D91E27;
+}
+
+QPushButton.warning:flat:hover {
+  background-color: #24F2A720;
+}
+
+QPushButton.warning:flat:pressed,
+QPushButton.warning:flat:checked {
+  background-color: #24F2A710;
+  color: #24F2A7;
+}
+
+QPushButton.success:flat:hover {
+  background-color:#F87C0A20;
+}
+
+QPushButton.success:flat:pressed,
+QPushButton.success:flat:checked {
+  background-color: #F87C0A10;
+  color: #F87C0A;
+}
+
+QTableCornerButton::section {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #CDCDCD;
+border-top: 1px solid #CDCDCD;
+border-radius: 0px;
+}
+
+QTableView {
+    color: #717171;
+	font-size: 15px;
+    border: none;
+gridline-color: white;
+padding-left: 10px;
+}
+
+QTableView::item{
+    border-bottom: 1px solid #CDCDCD;
+}
+
+QTableView::item:selected{
+	background-color: #f0f1f2;
+  color: #717171;
+}
+
+
+QHeaderView::section {
+  background-color: #FFFFFF;
+  height: 35px;
+  color: #CDCDCD;
+border-style: 1px solid;
+border-color: #CDCDCD;
+font-size: 15px;
+  }
+
+QHeaderView::section::vertical {
+border-bottom: 1px solid #CDCDCD;
+color: #717171;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+QHeaderView::section::vertical:checked {
+	background-color: white;
+color: #717171;
+}
+
+QHeaderView::section::horizontal{
+border-top: 1px solid #CDCDCD;
+border-bottom: 1px solid #CDCDCD;
+}
+
+QLCDNumber {
+  color: #ECECEC;
+  background-color:#ECECEC10;
+  border: #ECECEC30;
+border-style:  1px solid;
+  border-radius: 4px;
+}
+
+
+#qt_calendar_prevmonth {
+  qproperty-icon: url(icon:/primary/leftarrow.svg);
+}
+
+#qt_calendar_nextmonth {
+  qproperty-icon: url(icon:/primary/rightarrow.svg);
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  Inline QLineEdit  */
+
+QTreeView QLineEdit,
+QListView QLineEdit {
+  color: #2F2F31;
+  background-color: #2F2F31;
+  border: 1px solid unset;
+  border-radius: unset;
+  padding: unset;
+  padding-left: unset;
+  height: unset;
+  border-width: unset;
+  border-top-left-radius: unset;
+  border-top-right-radius: unset;
+}
+QToolTip {
+  padding: 5px;
+  border:  #000000;
+border-style: 1px solid;
+  border-radius: 4px;
+  color: #2F2F31;
+  background-color: #FFFFFF;
+}
+
+QDialog QToolButton,
+QDialog QToolButton:hover,
+QDialog QToolButton:pressed,
+QDialog QToolButton:checked {
+  background-color: unset;
+  border: 0px;
+  height: unset;
+  margin: unset;
+  padding: unset;
+  border-right: unset;
+  border-left: unset;
+}
+
+/*  ------------------------------------------------------------------------  */
+/*  Grips  */
+
+
+QMainWindow::separator:vertical,
+QSplitter::handle:horizontal {
+  image: url(icon:/primary/splitter-horizontal.svg);
+}
+
+QMainWindow::separator:horizontal,
+QSplitter::handle:vertical {
+  image: url(icon:/primary/splitter-vertical.svg);
+}
+
+QSizeGrip {
+  image: url(icon:/primary/sizegrip.svg);
+  background-color: transparent;
+  width: 16px;
+  height: 16px;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>145</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Factorabilitate</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_18">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QFrame" name="frame_14">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>91</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <item alignment="Qt::AlignLeft">
+               <widget class="QLabel" name="label_7">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>IBM Plex Sans SemiBold</family>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Factorabilitate</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+                <property name="indent">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="MplWidget" name="factorabilitate">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Plot varianta</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_15">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="QFrame" name="frame_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>91</height>
+              </size>
+             </property>
+             <property name="contextMenuPolicy">
+              <enum>Qt::NoContextMenu</enum>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>Plot varianta</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+                <property name="indent">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="MplWidget" name="plot_varianta">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_5"/>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignRight">
+            <widget class="QPushButton" name="buton_varianta">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>36</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Varianta factori</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Corelograma</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_13">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_10">
+           <item>
+            <widget class="QFrame" name="frame_8">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>91</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7">
+              <item>
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>Corelograma</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+                <property name="indent">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="MplWidget" name="corelograma">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignRight">
+            <widget class="QPushButton" name="buton_corelatii">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>36</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Corelatii</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Plot corelatii</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_16">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_12">
+           <item>
+            <widget class="QFrame" name="frame_10">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>91</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item alignment="Qt::AlignLeft">
+               <widget class="QLabel" name="label_5">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="font">
+                 <font>
+                  <family>IBM Plex Sans SemiBold</family>
+                  <pointsize>-1</pointsize>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Plot corelatii</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+                <property name="indent">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="MplWidget" name="plot_corelatii">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Plot scoruri</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <widget class="QFrame" name="frame_17">
+          <property name="frameShape">
+           <enum>QFrame::StyledPanel</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Raised</enum>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_4">
+           <item>
+            <widget class="QFrame" name="frame_12">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>91</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Plot scoruri</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                </property>
+                <property name="margin">
+                 <number>10</number>
+                </property>
+                <property name="indent">
+                 <number>0</number>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="MplWidget" name="plot_scoruri">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item alignment="Qt::AlignRight">
+            <widget class="QPushButton" name="buton_scoruri">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>36</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Scoruri</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QFrame</extends>
+   <header>mplwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
