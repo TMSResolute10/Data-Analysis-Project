@@ -2,10 +2,10 @@
 
 ## Table of contents
 * [Introduction](#introduction)
-* [Description](#description)
-* [Results](#results)
 * [Technologies](#technologies)
 * [Setup](#setup)
+* [Description](#description)
+* [Results](#results)
 
 ## Introduction
 The project aims to analyse a dataset using exploratory factor analysis. This method is designed with the aim of identifying underlying relationships between measured variables.
@@ -13,10 +13,15 @@ The project aims to analyse a dataset using exploratory factor analysis. This me
 ## Technologies
 Project is created with:
 * Python version: 3.7.9
-* Pandas library
-* Numpy library
-* PySide2 library
-* QT
+* Pandas package
+* Numpy package
+* PySide2 package
+* Seaborn package
+* Matplotlib library
+* Factor Analyzer package
+* SciPy statistical functions
+* Sklearn.preprocessing package
+* QT Designer
 	
 ## Setup
 To run this project, please enter the following commands on your terminal:
@@ -24,7 +29,6 @@ To run this project, please enter the following commands on your terminal:
 ```
 git clone https://github.com/TSMadalina/Data-Analysis-Project
 cd Data-Analysis-Project
-pip install PySide2
 ```
 
 ## Description
