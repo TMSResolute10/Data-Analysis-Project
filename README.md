@@ -19,8 +19,8 @@ Project is created with:
 * Seaborn package
 * Matplotlib library
 * Factor Analyzer package
-* SciPy statistical functions
-* Sklearn.preprocessing package
+* SciPy package
+* Sklearn package
 * QT Designer
 	
 ## Setup
