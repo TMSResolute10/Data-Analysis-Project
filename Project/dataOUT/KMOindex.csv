@@ -1,0 +1,19 @@
+,KMO index
+Overall_rating,0.817546916333279
+Location_rating,0.7696979461449311
+Cleanliness_rating,0.8008991575089384
+Rooms_rating,0.6792111849389073
+Service_rating,0.7653760319362811
+Sleepquality_rating,0.8518725698331332
+Value_rating,0.774730436296991
+Hotel.stars,0.5216660190670611
+Hotel.price,0.6062346230524511
+Hotel.distance,0.47629057706693856
+Hotel.noofrooms,0.5296593189750448
+Destination_country_GDP,0.7005754196119581
+Destination_country_pdi,0.7016095435874796
+Destination_country_idv,0.6564734699507974
+Destination_country_mas,0.3856965635957269
+Destination_country_uai,0.6954045607440096
+Destination_country_lto,0.6256290785500769
+Destination_country_ivr,0.4743559504418
