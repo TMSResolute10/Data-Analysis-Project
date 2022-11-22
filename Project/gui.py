@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'guiMGiWSW.ui'
+## Form generated from reading UI file 'guiwLkdxw.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -1202,7 +1202,7 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(4)
 
 
         QMetaObject.connectSlotsByName(MainWindow)
@@ -1210,18 +1210,18 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Factorabilitate", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Factorabilitate", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Plot varianta", None))
-        self.buton_varianta.setText(QCoreApplication.translate("MainWindow", u"Varianta factori", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Plot varianta", None))
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Corelograma", None))
-        self.buton_corelatii.setText(QCoreApplication.translate("MainWindow", u"Corelatii", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Corelograma", None))
-        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Plot corelatii", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QCoreApplication.translate("MainWindow", u"Plot corelatii", None))
-        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Plot scoruri", None))
-        self.buton_scoruri.setText(QCoreApplication.translate("MainWindow", u"Scoruri", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), QCoreApplication.translate("MainWindow", u"Plot scoruri", None))
+        self.label_7.setText(QCoreApplication.translate("MainWindow", u"Factorability", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Factorability", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Variance plot", None))
+        self.buton_varianta.setText(QCoreApplication.translate("MainWindow", u"Factors variance", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), QCoreApplication.translate("MainWindow", u"Variance plot", None))
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Correlogram", None))
+        self.buton_corelatii.setText(QCoreApplication.translate("MainWindow", u"Correlations", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), QCoreApplication.translate("MainWindow", u"Correlogram", None))
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"Correlation plot", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), QCoreApplication.translate("MainWindow", u"Correlation plot", None))
+        self.label_6.setText(QCoreApplication.translate("MainWindow", u"Scores plot", None))
+        self.buton_scoruri.setText(QCoreApplication.translate("MainWindow", u"Scores", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), QCoreApplication.translate("MainWindow", u"Scores plot", None))
     # retranslateUi
 

@@ -922,11 +922,11 @@ QSizeGrip {
        </size>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>4</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
-        <string>Factorabilitate</string>
+        <string>Factorability</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
         <item row="0" column="0">
@@ -982,7 +982,7 @@ QSizeGrip {
                  </font>
                 </property>
                 <property name="text">
-                 <string>Factorabilitate</string>
+                 <string>Factorability</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1021,7 +1021,7 @@ QSizeGrip {
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Plot varianta</string>
+        <string>Variance plot</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_2">
         <item row="0" column="0">
@@ -1060,7 +1060,7 @@ QSizeGrip {
               <item>
                <widget class="QLabel" name="label_3">
                 <property name="text">
-                 <string>Plot varianta</string>
+                 <string>Variance plot</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1111,7 +1111,7 @@ QSizeGrip {
 font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
              </property>
              <property name="text">
-              <string>Varianta factori</string>
+              <string>Factors variance</string>
              </property>
             </widget>
            </item>
@@ -1122,7 +1122,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
-        <string>Corelograma</string>
+        <string>Correlogram</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0">
@@ -1152,7 +1152,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
               <item>
                <widget class="QLabel" name="label_4">
                 <property name="text">
-                 <string>Corelograma</string>
+                 <string>Correlogram</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1197,7 +1197,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
 font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
              </property>
              <property name="text">
-              <string>Corelatii</string>
+              <string>Correlations</string>
              </property>
             </widget>
            </item>
@@ -1208,7 +1208,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
       </widget>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
-        <string>Plot corelatii</string>
+        <string>Correlation plot</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
@@ -1252,7 +1252,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
                  </font>
                 </property>
                 <property name="text">
-                 <string>Plot corelatii</string>
+                 <string>Correlation plot</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignCenter</set>
@@ -1291,7 +1291,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
       </widget>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
-        <string>Plot scoruri</string>
+        <string>Scores plot</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_5">
         <item row="0" column="0">
@@ -1321,7 +1321,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
               <item>
                <widget class="QLabel" name="label_6">
                 <property name="text">
-                 <string>Plot scoruri</string>
+                 <string>Scores plot</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1366,7 +1366,7 @@ font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
 font: 12pt &quot;IBM Plex Sans Medium&quot;;</string>
              </property>
              <property name="text">
-              <string>Scoruri</string>
+              <string>Scores</string>
              </property>
             </widget>
            </item>
