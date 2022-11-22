@@ -71,7 +71,7 @@ The variables used in this study contain data about a randomly chosen hotel loca
 
 Heatmap KMO index |  Factor and variables correlogram
 :-------------------------:|:-------------------------:
-![image](https://user-images.githubusercontent.com/76962878/190694547-44afdad8-0a1f-42f6-893b-119e24dd443e.png)  | ![image](https://user-images.githubusercontent.com/76962878/190698093-11637218-6c89-4a89-a576-9ee1a3527f3b.png)
+![image](https://user-images.githubusercontent.com/76962878/203347835-8aa8379b-0199-40ed-adf2-edb3b46358b9.png)  | ![image](https://user-images.githubusercontent.com/76962878/203347984-17f8687b-6c99-4ef2-821c-2f11a2129158.png)
 
 For a more detailed analysis click [here](Project/Analiza.md).
 
