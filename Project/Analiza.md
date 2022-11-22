@@ -38,7 +38,7 @@ I selected exploratory factor analysis for this study since the model is conside
 
 * ### KMO index correlation matrix
 
-![image](https://user-images.githubusercontent.com/76962878/194668085-c6b8a25e-8718-4928-831f-d29ee224812f.png)
+![image](https://user-images.githubusercontent.com/76962878/203348286-3f45471f-b11b-4481-8201-654c6b6e7fb3.png)
 
 >Figure 2: KMO index heatmap
 
@@ -47,8 +47,7 @@ The factorability of the main values can be determined using the correlogram of 
 One of the strongest correlations is seen in the sleep quality rating for the hotels investigated. According to this, a guest's pleasure appears to be strongly related to the level of comfort and relaxation they experience in the country they visit. On the other hand, the GDP value as well as the PDI index ("power distance") play an equally vital role in the final rating given to the hotel, and thus in customer satisfaction. A high GDP can indicate that the country visited is one of the top choices for travellers, as tourism plays a very important role in a country's economy. The PDI index measures tourists' inclination to consider a country's administration and political issues before deciding whether or not to visit that country. Thus, the high value demonstrates how a country's instability and the way it prioritizes equality among people can damage its tourism industry.
 
 * ### Factor variance
-![image](https://user-images.githubusercontent.com/76962878/194765485-a282cfa8-3c7c-4e2a-ba44-93e041ea43cc.png)
-
+![image](https://user-images.githubusercontent.com/76962878/203348707-0ee25158-594d-4b29-9879-56fa138ed20a.png)
 
 >Figure 3: Factor variance table
 
@@ -60,14 +59,14 @@ To reject the null hypothesis, I need to prove that the statistical p-value is l
 
 The weights reflect the percentage of variance covered of the overall variation for each value. The cumulative weights add all the weights together to determine which components are eligible for analysis.
  
- ![image](https://user-images.githubusercontent.com/76962878/190700021-6ba37b73-415e-492b-83af-d28753c0e959.png)
+ ![image](https://user-images.githubusercontent.com/76962878/203348780-22afcb4d-f339-400b-9469-e5d2b716a460.png)
 
 >Figure 4: Variance plot
 
 I have 4 components with variance greater than 1, according to the Kaiser criterion (indicated in green in Figure 4). There are also 4 according to the Cattell criterion, but it was calculated differently: the variance loss of component 5 when compared to component 4 is greater than the variance loss of component 4 when compared to component 3. Because these two criteria are utilized for principal component analysis rather than factor analysis, I will stop using the Bartlett test to determine the number of factors in component 10.
 
 * ### Factor analysis and correlogram
- ![image](https://user-images.githubusercontent.com/76962878/190700038-d18074fd-4da9-497d-afb4-cb260e3f9988.png)
+![image](https://user-images.githubusercontent.com/76962878/203348940-0a9ecade-79cc-46e2-803a-88c2c1ac61a2.png)
 
 >Figure 5: Correlogram between variables and factors
 
@@ -108,7 +107,7 @@ The 10 factors analyzed, the variables they contain, and the group to which they
 10. Freedom of expression: UAI (inverse)
 
 * ### Factor scores
-![image](https://user-images.githubusercontent.com/76962878/190700065-c010678b-c03f-493c-b2b4-0432421a1cfe.png)
+![image](https://user-images.githubusercontent.com/76962878/203349214-b6ee6e7a-e116-4a22-b95b-29c0ade1c1cc.png)
 
 >Figure 6: Score plot
 
@@ -117,7 +116,7 @@ Figure 6 shows the relationship between each factor and the initial variables. A
 If we were to divide the plot into two halves, we can find a scattering of developed countries at the top and countries with lesser GDP than those above at the bottom. At the same time, the countries on the right side of the plot have good ratings for the hotels surveyed, while the countries on the left have low ratings for hospitality services.
 
 * ### Correlations
-![image](https://user-images.githubusercontent.com/76962878/190700082-31c82ed5-0daf-4787-88b2-ef2e2915a7e9.png)  | ![image](https://user-images.githubusercontent.com/76962878/190700096-6e1f8f56-38d6-4432-8c36-404f08011a42.png)
+![image](https://user-images.githubusercontent.com/76962878/203349371-4814a252-b915-496b-b44a-ed83ee3b6577.png)  | ![image](https://user-images.githubusercontent.com/76962878/203349961-58f23fb4-52cc-4c27-81e0-b1600d85922b.png)
 ------------- | -------------
 Figure 8: Correlation circle for F1 and F2  | Figure 7: Correlation circle for F3 and F4
 
