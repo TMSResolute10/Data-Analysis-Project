@@ -8,7 +8,7 @@
 * [Results](#results)
 
 ## Introduction
-The project aims to analyse a dataset using exploratory factor analysis. This method is designed with the aim of identifying underlying relationships between measured variables.
+The project aims to analyze a dataset using exploratory factor analysis. This method is designed with the aim of identifying underlying relationships between measured variables.
 
 ## Technologies
 Project is created with:
